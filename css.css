@@ -1,25 +1,51 @@
 :root {
     --body: #FFFFFF;
     --background: #BBBBBB;
-    --text: #000000;
+    --text: #111111;
     --svg: 0;
+    --link: #111111;
 }
 [theme="dark"] {
     --body: #161616;
     --border: #242424;
     --text: #FFFFFF;
     --svg: 1;
+    --link: white;
+    --intro: #fad643;
+}
+@font-face {
+    font-family: "europa";
+    src: url(Europa\ Regular.ttf);
 }
 body {
     background-color: var(--body);
+    font-family: europa;
+    font-weight: 400;
 }
 svg {
     filter: invert(var(--svg));
 }
 .main {
     height: 70vh;
+    width: 60vw;
     padding-top: 25vh;
     text-align: center;
+    color: var(--intro);
+}
+.name {
+    color: var(--intro);
+}
+.name:hover {
+    color: var(--intro);
+}
+.nav-link{
+    color: var(--link);
+    transition: ease-in-out 0.1s;
+    margin-right: 15px;
+}
+.nav-link:hover {
+    color: var(--link);
+    border-bottom: 1px solid black;    
 }
 .features {
     max-height: 7vw;
