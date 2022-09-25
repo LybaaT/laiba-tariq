@@ -38,10 +38,10 @@ svg {
 .name:hover {
     color: var(--intro);
 }
-.nav-link{
+.nav-link {
     color: var(--link);
-    transition: ease-in-out 0.1s;
-    margin-right: 15px;
+    margin-right: 20px;
+    transition: ease-in-out 3s;
 }
 .nav-link:hover {
     color: var(--link);
