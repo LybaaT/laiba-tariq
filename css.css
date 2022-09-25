@@ -1,0 +1,59 @@
+:root {
+    --body: #FFFFFF;
+    --background: #BBBBBB;
+    --text: #000000;
+    --svg: 0;
+}
+[theme="dark"] {
+    --body: #161616;
+    --border: #242424;
+    --text: #FFFFFF;
+    --svg: 1;
+}
+body {
+    background-color: var(--body);
+}
+svg {
+    filter: invert(var(--svg));
+}
+.main {
+    height: 70vh;
+    padding-top: 25vh;
+    text-align: center;
+}
+.features {
+    max-height: 7vw;
+}
+.container h2 {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+}
+.container h4 {
+    margin-top: 5vh;
+}
+.row {
+    height: 20vh;
+}
+.reveal {
+    opacity: 0;
+}
+.active {
+    animation: fadein 0.3s ease-out;
+    opacity: 1;
+}
+@keyframes fadein {
+    from {
+        opacity: 0%;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+.navbar {
+    padding: 6vh 3vw;
+}
+.h1 {
+    font-size: 35px;
+}
