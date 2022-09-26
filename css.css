@@ -21,7 +21,6 @@ body {
     background-color: var(--body);
     font-family: europa;
     font-weight: 400;
-    user-select: none;
 }
 .darkmode {
     filter: invert(var(--svg));
@@ -61,18 +60,21 @@ body {
 .features {
     max-height: 7vw;
 }
+#me {
+    max-width: 300px;
+    margin-top: 6vh;
 
+}
 .container h2 {
     margin-top: 5vh;
+    font-size: 35px;
 }
 .container h4 {
     margin-top: 5vh;
 }
 .container p {
-    margin-top: -10vh;
-}
-.row {
-    height: 20vh;
+    margin-top: 5vh;
+    text-align: left;
 }
 .reveal {
     opacity: 0;
