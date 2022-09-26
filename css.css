@@ -11,7 +11,6 @@
     --text: #FFFFFF;
     --svg: 1;
     --link: white;
-    --intro: #fad643;
 }
 @font-face {
     font-family: "europa";
@@ -19,7 +18,7 @@
 }
 body {
     background-color: var(--body);
-    font-family: europa;
+    font-family: "europa";
     font-weight: 400;
 }
 .darkmode {
@@ -63,7 +62,6 @@ body {
 #me {
     max-width: 300px;
     margin-top: 6vh;
-
 }
 .container h2 {
     margin-top: 5vh;
@@ -80,19 +78,17 @@ body {
     opacity: 0;
 }
 .active {
-    animation: fadein 0.3s ease-out;
+    animation: active 0.2s ease-out;
+    transition: all 0.2s ease-out;
     opacity: 1;
-}
-@keyframes fadein {
+} 
+@keyframes active {
     from {
-        opacity: 0%;
+        opacity: 0;
         transform: translateY(100px);
     }
     to {
-        opacity: 100%;
+        opacity: 1;
         transform: translateY(0px);
     }
-}
-.navbar {
-    padding: 6vh 3vw;
 }
