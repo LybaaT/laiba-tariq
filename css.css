@@ -20,14 +20,16 @@ body {
     background-color: var(--body);
     font-family: "europa";
     font-weight: 400;
+    overflow-x: hidden;
 }
 .darkmode {
     filter: invert(var(--svg));
     transform: scale(1.5);
     position: sticky;
+    width: 6vw;
 }
 .description {
-    height: 65vh;
+    height: 70vh;
     width: 60vw;
     padding-top: 25vh;
     text-align: center;
@@ -38,14 +40,13 @@ body {
 }
 .name {
     color: var(--intro);
-    margin: 9px;    
+    padding: 20px;
+    margin-left: 5vw;
+    font-size: 35px;
+    font-weight: 600;
 }
 .name:hover {
     color: var(--intro);
-}
-.h1 {
-    font-size: 35px;
-    text-align: center;
 }
 .nav-link {
     color: var(--link);
@@ -73,6 +74,10 @@ body {
 .container p {
     margin-top: 5vh;
     text-align: left;
+}
+.contribute {
+    margin-top: 50vh; 
+    margin-bottom: 10vh;
 }
 .reveal {
     opacity: 0;
