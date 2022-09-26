@@ -6,7 +6,7 @@
     --link: #111111;
 }
 [theme="dark"] {
-    --body: #161616;
+    --body: #38383b;
     --border: #242424;
     --text: #FFFFFF;
     --svg: 1;
@@ -21,27 +21,38 @@ body {
     background-color: var(--body);
     font-family: europa;
     font-weight: 400;
+    user-select: none;
 }
-svg {
+.darkmode {
     filter: invert(var(--svg));
+    transform: scale(1.5);
+    position: sticky;
 }
-.main {
-    height: 70vh;
+.description {
+    height: 65vh;
     width: 60vw;
     padding-top: 25vh;
     text-align: center;
-    color: var(--intro);
+}
+.intro {
+    font-weight: 700;
+    color: var(--text);
 }
 .name {
     color: var(--intro);
+    margin: 9px;    
 }
 .name:hover {
     color: var(--intro);
 }
+.h1 {
+    font-size: 35px;
+    text-align: center;
+}
 .nav-link {
     color: var(--link);
-    margin-right: 20px;
-    transition: ease-in-out 3s;
+    margin-right: 22px;
+    transition: ease-in-out 0.2s;
 }
 .nav-link:hover {
     color: var(--link);
@@ -50,12 +61,15 @@ svg {
 .features {
     max-height: 7vw;
 }
+
 .container h2 {
-    margin-top: 20vh;
-    margin-bottom: 10vh;
+    margin-top: 5vh;
 }
 .container h4 {
     margin-top: 5vh;
+}
+.container p {
+    margin-top: -10vh;
 }
 .row {
     height: 20vh;
@@ -79,7 +93,4 @@ svg {
 }
 .navbar {
     padding: 6vh 3vw;
-}
-.h1 {
-    font-size: 35px;
 }
