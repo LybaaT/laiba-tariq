@@ -22,28 +22,31 @@ body {
     font-weight: 400;
     overflow-x: hidden;
 }
+.navbar {
+    background-color: yellow;
+    padding: 5vh 1vw;
+}
 .darkmode {
     filter: invert(var(--svg));
     transform: scale(1.5);
     position: sticky;
     width: 6vw;
 }
+.name {
+    color: var(--intro);
+    font-size: 35px;
+    font-weight: 600;
+}
 .description {
     height: 70vh;
     width: 60vw;
     padding-top: 25vh;
     text-align: center;
+    background-color: orange;
 }
 .intro {
     font-weight: 700;
     color: var(--text);
-}
-.name {
-    color: var(--intro);
-    padding: 20px;
-    margin-left: 5vw;
-    font-size: 35px;
-    font-weight: 600;
 }
 .name:hover {
     color: var(--intro);
@@ -52,6 +55,7 @@ body {
     color: var(--link);
     margin-right: 22px;
     transition: ease-in-out 0.2s;
+    background-color: green;
 }
 .nav-link:hover {
     color: var(--link);
