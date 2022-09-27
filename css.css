@@ -97,3 +97,6 @@ body {
         transform: translateY(0px);
     }
 }
+.inlinecontainer {
+    text-align: center;
+}
